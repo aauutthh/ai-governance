@@ -167,10 +167,10 @@ ai-governance/
 │     ├─ plan.template.md
 │     └─ failed_logs.template.md
 ├─ rules/
-│  ├─ coding-rules.md
-│  ├─ design-rules.md
-│  ├─ review-rules.md
-│  └─ naming-rules.md
+   ├─ coding-rules.md
+   ├─ design-rules.md
+   ├─ review-rules.md
+   └─ naming-rules.md
 ```
 
 ## 文件说明
