@@ -87,6 +87,7 @@ git subtree pull --prefix=.agent/shared https://github.com/aauutthh/ai-governanc
 3. `agent/instruction.md`
 4. `project-overrides.md`
 5. `agent/memory.md`
+6. `agent/rules/`
 
 补充说明：
 
@@ -204,8 +205,8 @@ ai-governance/
 
 1. `README.md`
 2. `agent/agent.md`
-3. `agent/spec-workflow.md`
-4. `agent/instruction.md`
+3. `agent/instruction.md`
+4. `agent/spec-workflow.md`
 
 ### 进行设计工作时
 

@@ -1,28 +1,28 @@
 # instruction.md
 
 ## 设计阶段通用要求
-- 不写真实语言实现代码
+- 禁止生成实际语言实现的代码，防止过早陷入具体语言语法层面。
 - 所有业务逻辑描述优先使用: text art > mermaid > markdown表格 > 伪代码系统
 - 所有待确认项使用统一标记：`[NEEDS_DECISION:<topic>]`
 - 所有假设使用统一标记：`[ASSUMPTION:<text>]`
 
 ## 规格文档生成要求
 - 输入：`prd<xx>.md`
-- 输出目录：`prd<xx>_spec/`
+- 输出目录：`docs/prd/prd<xx>_spec/`
 - 最低包含：
   - 00-overview.md
-  - 01-xxx.md
-  - 02-xxx.md
-  - 99-open-questions.md
+  - 01-<module>.md
+  - 02-<module>.md
+  - 99-open_questions.md
 - xxx为具体模块
 
 ## 计划文档生成要求
 - 输入：`prd<xx>_spec/`
-- 输出目录：`prd<xx>_plans/`
+- 输出目录：`docs/prd/prd<xx>_plans/`
 - 最低包含：
   - 00-overview.md
-  - 01-xxx.md
-  - 02-xxx.md
+  - 01-<module>.md
+  - 02-<module>.md
 
 ## 编码阶段要求
 - 先确认对应 plan 存在

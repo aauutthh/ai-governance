@@ -3,7 +3,7 @@
 ## 目标
 本仓库中的 AI agent 必须遵守统一的软件设计与实现流程，优先保证：
 1. 需求 -> 规格 -> 计划 -> 实现的阶段边界清晰
-2. 非编码阶段禁止产出真实代码, 需要代码描述的地方, 使用伪代码系统
+2. 非编码阶段禁止生成实际语言实现的代码，防止过早陷入具体语言语法层面。需要代码描述的地方, 使用伪代码系统
 3. 所有逻辑描述优先使用: text art > mermaid > markdown表格 > 伪代码系统
 4. 编码失败达到阈值时必须停止并记录
 5. review 必须检查设计一致性、SOLID、代码异味
@@ -14,6 +14,7 @@
 3. instruction.md
 4. project-overrides.md
 5. memory.md
+6. spec-workflow.md
 
 ## 工作流
 ### 当输入是 `prd<xx>.md`
@@ -23,7 +24,7 @@
 - 将二义性、依赖用户决策的问题记录到 open questions 文档中
 - 伪代码系统使用 `pseudocode-system.md`
 
-### 当输入是 `prd<xx>_spec/`
+### 当输入是 `docs/prd/prd<xx>_spec/`
 - 仅允许输出到 `docs/prd/prd<xx>_plans/`
 - 属于设计阶段，禁止生成代码
 - 计划必须拆分为边界清晰、可独立验证的模块

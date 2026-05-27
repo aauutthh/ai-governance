@@ -1,4 +1,4 @@
-# review阶段
+# review阶段规则
 
 REQUIRED:
 - 检查 SOLID
