@@ -7,6 +7,6 @@ TRIGGER:
 REQUIRED:
 - 修改必须对应某个计划模块
 - 如果同一段代码 5 次修改仍无法编译成功：
-  - 写 failed_ai_gen_<timestamp>.md
+  - 写 failed_logs_<timestamp>.md
   - 记录尝试历史、失败原因、建议
   - 停止继续修改

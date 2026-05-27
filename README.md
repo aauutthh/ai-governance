@@ -54,13 +54,25 @@ git subtree pull --prefix=.agent/shared https://github.com/aauutthh/ai-governanc
 ## 目录结构
 
 ```text
-.
-├── README.md
-├── agent.md
-├── instruction.md
-├── memory.md
-├── pseudocode-system.md
-└── templates/
+ai-governance/
+├─ README.md
+├─ agent/
+│  ├─ agent.md
+│  ├─ memory.md
+│  ├─ instruction.md
+│  ├─ pseudocode-system.md
+│  ├─ review-checklist.md
+│  ├─ spec-workflow.md
+│  └─ templates/
+│     ├─ prd.template.md
+│     ├─ spec.template.md
+│     ├─ plan.template.md
+│     └─ failed_logs.template.md
+├─ rules/
+   ├─ coding-rules.md
+   ├─ design-rules.md
+   ├─ review-rules.md
+   └─ naming-rules.md
 ```
 
 ## 文件说明
