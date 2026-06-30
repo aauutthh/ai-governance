@@ -24,15 +24,15 @@ PRD -> Spec -> Plan -> Coding -> Review
 
 ## 阶段一：PRD -> Spec
 
-### 输入
+### 输入（PRD -> Spec）
 
 - `prd<xx>.md`
 
-### 标准输出路径
+### 标准输出路径（PRD -> Spec）
 
 - `docs/prd/prd<xx>_spec/`
 
-### 最低输出要求
+### 最低输出要求（Spec -> Plan）
 
 至少包含：
 
@@ -43,13 +43,13 @@ PRD -> Spec -> Plan -> Coding -> Review
 
 文件名统一使用 `snake_case`。
 
-### 目标
+### 目标（PRD -> Spec）
 
 - 将需求拆解为可设计、可讨论、可验证的模块规格
 - 明确模块边界、职责、依赖、异常与状态变化
 - 形成后续计划拆分的基础
 
-### 必须遵守
+### 必须遵守（PRD -> Spec）
 
 - 禁止生成**实际语言实现的代码**，防止过早陷入具体语言语法层面
 - 业务逻辑描述优先使用：`text art > mermaid > markdown 表格 > 伪代码系统`
@@ -72,7 +72,7 @@ PRD -> Spec -> Plan -> Coding -> Review
    - 该决策可能影响的设计方向
 4. 后续人工可覆盖该决策，但在人工确认前不得阻塞整体设计推进
 
-### 完成标准
+### 完成标准（PRD -> Spec）
 
 - 模块边界清晰
 - 每个模块职责单一
@@ -84,11 +84,11 @@ PRD -> Spec -> Plan -> Coding -> Review
 
 ## 阶段二：Spec -> Plan
 
-### 输入
+### 输入（Spec -> Plan）
 
 - `docs/prd/prd<xx>_spec/`
 
-### 标准输出路径
+### 标准输出路径（Spec -> Plan）
 
 - `docs/prd/prd<xx>_plans/`
 
@@ -102,13 +102,13 @@ PRD -> Spec -> Plan -> Coding -> Review
 
 文件名统一使用 `snake_case`。
 
-### 目标
+### 目标（Spec -> Plan）
 
 - 将规格拆分为可执行、可验证、边界清晰的实现模块
 - 明确每个模块的改动范围、依赖、验证方式与执行顺序
 - 优先安排需要用户预先参与的步骤
 
-### 必须遵守
+### 必须遵守（Spec -> Plan）
 
 - 禁止生成**实际语言实现的代码**
 - 每个计划模块必须可独立验证
@@ -116,7 +116,7 @@ PRD -> Spec -> Plan -> Coding -> Review
 - 需要用户预操作、环境准备、权限申请的任务，必须优先排前
 - 如果 spec 中仍有重大未决问题，plan 必须显式标出风险与依赖
 
-### 完成标准
+### 完成标准（Spec -> Plan）
 
 - 计划项之间边界清晰
 - 可按模块逐步实现
@@ -127,17 +127,17 @@ PRD -> Spec -> Plan -> Coding -> Review
 
 ## 阶段三：Plan -> Coding
 
-### 输入
+### 输入（Plan -> Coding）
 
 - `docs/prd/prd<xx>_plans/`
 - 对应模块计划文档
 
-### 目标
+### 目标（Plan -> Coding）
 
 - 基于 plan 中已定义的模块执行实现
 - 保证实现与计划、规格、需求一致
 
-### 必须遵守
+### 必须遵守（Plan -> Coding）
 
 - 必须存在对应的 plan 模块后才能编码
 - 每次编码必须映射到某一个明确的计划模块
@@ -152,7 +152,7 @@ PRD -> Spec -> Plan -> Coding -> Review
 - 停止继续盲改该段代码
 - 输出失败原因、已尝试方案、建议后续动作
 
-### 完成标准
+### 完成标准（Plan -> Coding）
 
 - 改动可映射到计划模块
 - 行为与 spec 保持一致
@@ -162,12 +162,12 @@ PRD -> Spec -> Plan -> Coding -> Review
 
 ## 阶段四：Coding -> Review
 
-### 输入
+### 输入（Coding -> Review）
 
 - 代码变更
 - 对应 PRD / Spec / Plan
 
-### 目标
+### 目标（Coding -> Review）
 
 - 校验实现是否与设计一致
 - 识别设计偏移、代码异味、复杂度与可维护性问题
@@ -180,7 +180,7 @@ PRD -> Spec -> Plan -> Coding -> Review
 - 是否引入不必要复杂性
 - 是否存在缺失验证或风险未说明
 
-### 完成标准
+### 完成标准（Coding -> Review）
 
 - review 结论清晰
 - 问题按严重程度分类
